@@ -1,0 +1,38 @@
+.deleteNotification {
+    border: none;
+
+    float: right;
+
+}
+
+.temperatureText {
+    padding-right: 15px;
+    float: right;
+    font-size: larger;
+}
+
+invis {
+    visibility: hidden;
+}
+
+.sensorName {
+}
+
+.errorPage {
+    font-size: x-large;
+    color: red;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-top: -100px;
+    margin-left: -200px;
+  
+
+}
+.sensorHeader{
+    font-size: x-large;
+    color: Black;
+    position: relative;
+    left: 20%;
+
+}

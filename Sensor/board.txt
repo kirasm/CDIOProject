@@ -1,0 +1,5 @@
+# Sensor build property overrides
+#
+  network.password=test
+  network.auth_upload=yes
+  network.port=8266

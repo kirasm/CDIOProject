@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>chart</title>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.6.0/Chart.bundle.js"></script>
+
+</head>
+<body>
+
+<canvas id="myChart" width="40" height="40"></canvas>
+
+
+<script>
+
+    var label = [];
+    var data = [];
+    var ctx = $("#myChart");
+    var myChart = new Chart(ctx, {
+        type: 'line',
+        options: {},
+        data: {
+            labels: label,
+            datasets: [{
+                fill: true,
+                data: data
+            }]
+        }
+
+    });
+
+
+    setInterval(function () {
+        console.log("wswad");
+        label.push('3');
+        data.push(Math.random() * 100);
+        myChart.update();
+
+    }, 1000);
+
+    clearInterval(timer);
+
+</script>
+
+</body>
+</html>
